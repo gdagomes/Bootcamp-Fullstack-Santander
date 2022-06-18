@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 90vw;
+    background-color: rgba(255,255,255,1);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    
+}
+
+.phone{
+    margin-right: 24px;
+    margin-bottom: 32px;
+}
+
+.phone img{
+    max-height: 600px
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 340px;
+    height: 300px;
+    margin-top: 28px;
+}
+
+.login-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px;
+    width: 100%;
+    height: 450px;
+    background-color: rgba(255,255,255);
+    border: 1px solid rgba(219,219,219,1);
+    border-radius: 1px;
+    padding: 26px;
+}
+
+.login-item .logo{
+    display: flex;
+    justify-content: center;
+    width: 175px;
+    height: 90px;
+}
+
+.login-item .logo img{
+    max-width: 100%;
+    max-height:100%;
+    object-fit: contain;
+}
+
+.login-item .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex: 0 0 auto;
+    margin-top:10px;
+}
+
+.login-item .form .credentials{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 5px;
+}
+
+.login-item .form .credentials textarea{
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    font-size: 14px;
+    color: rgba(219,219,219,1);
+    background-color: #FAFAFA;
+    border: 1px solid rgba(219,219,219,1);
+    border-radius: 3px;
+    resize:none;
+}
+
+.login-item .form .credentials button{
+    margin-top: 10px;
+    width: 100%;
+    height: 80%;
+    color: #FAFAFA;
+    background-color: rgb(188,206,251);
+    border-style: none;
+    border-radius: 5px;
+}
+
+.text{
+    display: flex;
+    margin-top: 15px;
+    font-size: 14px;
+    align-items: center;
+    color: rgb(219,219,219)
+}
+
+.text div{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(219,219,219,1);
+}
+
+.text div + p{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.login-facebook{
+    margin-top: 20px;
+    width: 268px;
+    height: 24px;
+}
+
+.login-facebook button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgba(255,255,255,1);
+    width: 100%;
+    height: 100%;
+}
+
+.login-facebook button span img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.login-facebook button span a{
+    color: #385185;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.reset-senha{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 20px 0 0;
+}
+
+.reset-senha a{
+    color: #00376B;
+    font-size: 12px;
+}
+
+.cadastre{
+    font-size: 14px;
+}
+
+.cadastre p{
+    color: #262626;
+}
+
+.cadastre a{
+    color: #0095F6;
+
+}
+
+.aplicativo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.aplicativo div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.aplicativo img{
+    width: 150px;
+}
+
+@media (max-width:1023px){
+
+    body{
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0 32px;
+    }
+
+    .phone{
+        display: none;
+    }
+
+    .login{
+        width: 100%;
+    }
+
+}
