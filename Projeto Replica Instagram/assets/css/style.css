@@ -82,7 +82,7 @@ body{
     margin-bottom: 5px;
 }
 
-.login-item .form .credentials textarea{
+.login-item .form .credentials input{
     width: 100%;
     height: 100%;
     line-height: 30px;
