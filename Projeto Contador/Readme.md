@@ -1,7 +1,5 @@
 <h1 align="center">Projeto Contador</h1>
 
-<hr>
-
 <p>Este é o primeiro projeto prático das aulas de introdução de Javascript.</p>
 
 <h2>Objetivos:</h2>
