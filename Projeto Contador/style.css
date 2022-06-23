@@ -9,11 +9,20 @@
 
 body{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 90vh;
+    justify-content: space-around;
+    min-height: 100vh;
     background-color: #CBAACB;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    min-height: 50vh;
+    padding: 5px;
+    background-color: rgba(174, 116, 174, 0.181);
+    border-radius: 5%;
 }
 
 header{
@@ -33,10 +42,11 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 p{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -48,7 +58,7 @@ div{
     align-items: center;
 }
 
-div p{
+div span{
     font-size: 24px;
     text-align: center;
 }

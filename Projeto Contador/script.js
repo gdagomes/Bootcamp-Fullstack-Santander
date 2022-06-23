@@ -1,17 +1,30 @@
-var elementCurrentNumber = document.getElementById("currentnumber");
-
+var elementCurrentNumber = document.getElementById("currentNumber");
 var currentNumber = 0;
 
 function adicionar(){
 
-    currentNumber = currentNumber + 1;
-    elementCurrentNumber.innerHTML = currentNumber;
+    currentNumber++;
+
+    mostrarnatela();
+
 }
 
 function subtrair(){
 
-    currentNumber = currentNumber - 1;
-    elementCurrentNumber.innerHTML = currentNumber;
+    currentNumber--;
+   
+    mostrarnatela();
+
 }
 
 
+function mostrarnatela(){
+    if (currentNumber >= 0){
+        document.getElementById("currentNumber").style.color = "blue";
+    }
+    else{
+        document.getElementById("currentNumber").style.color = "red";
+    }
+
+    elementCurrentNumber.innerText = currentNumber;
+}
